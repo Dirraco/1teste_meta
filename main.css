@@ -1,0 +1,77 @@
+.navbar {
+    background-color: rgb(122, 114, 0);
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #fff;
+    color: rgb(122, 114, 0);
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: rgb(122, 114, 0);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #f3e7b8;
+}
+
+#sobre-a-meta,
+#contatos,
+#servicos {
+    background-color: #f3e7b8;
+}
+
+.text-colored {
+    color: rgb(122, 114, 0);
+}
+
+.conteudo,
+.finance {
+    text-align: center;
+    padding: 125px;
+}
+
+.nav-link.active,
+#fale-conosco button {
+    background-color: rgb(122, 114, 0);
+    color: #fff;
+}
+
+.nav-link.active:hover {
+    color: rgb(122, 114, 0);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width:767px) {
+    .carousel-item img {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .carousel-item img {
+        height: 250px;
+        width: 100%;
+    }
+}
