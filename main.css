@@ -1,6 +1,6 @@
 .navbar {
     background-color: #1d1b1b;
-    max-height: 90px;
+    max-height: 13vw;
 }
 
 .nav-link {
@@ -20,7 +20,7 @@
 }
 
 .navbar-toggler {
-    background-color: #f7d1aeb0;
+    background-color: #faaa5f;
 }
 
 .logotipo {
@@ -63,8 +63,12 @@
     text-decoration: none;
 }
 
+.btn {
+    background-color: #fff;
+}
+
 @media (max-width:767px) {
-    .carousel-item img {
+.carousel-item img {
         height: 250px;
         width: 100%;
     }
