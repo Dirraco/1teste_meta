@@ -1,6 +1,6 @@
 .navbar {
     background-color: #1d1b1b;
-    max-height: 13vw;
+    max-height: 10vh;
 }
 
 .nav-link {
@@ -67,16 +67,24 @@
     background-color: #fff;
 }
 
-@media (max-width:767px) {
+@media (max-width: 991px) {
 .carousel-item img {
         height: 250px;
         width: 100%;
     }
+
+    .container-header {
+        height: 5vh;
+    }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1199px) {
     .carousel-item img {
         height: 250px;
         width: 100%;
+    }
+
+    .logotipo {
+        margin-top: -15%;
     }
 }
