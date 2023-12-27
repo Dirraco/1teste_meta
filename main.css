@@ -43,8 +43,21 @@
     color: #faaa5f;
 }
 
-.conteudo,
 .finance {
+    padding: 48px;
+    margin-top: 50px;
+}
+
+.row {
+    padding-bottom: 120px;
+}
+
+.col {
+    padding-top: 28px;
+    padding-right: 10px;
+}
+
+.conteudo {
     text-align: center;
     padding: 125px;
 }
@@ -72,17 +85,11 @@
     background-color: #fff;
 }
 
-.container-card {
-    display: inline-block;
-    justify-content: center;
-
-}
-
 .card {
     position: relative;
     width: 300px;
     height: 200px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    background: linear-gradient(45deg, #ff820c 20%, #ffd30f 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -98,7 +105,7 @@
 }
 
 .card:hover {
-    transform: rotate(-5deg) scale(1.1);
+    transform: rotate(-3deg) scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
