@@ -1,3 +1,7 @@
+body {
+    background-color: #e7e6e6;
+}
+
 .navbar {
     background-color: #1d1b1b;
     max-height: 10vh;
@@ -31,12 +35,6 @@
 .carousel-item {
     max-width: 920px;
     max-height: 400px;
-}
-
-#sobre-a-meta,
-#equipe,
-#contatos {
-    background-color: #e7e6e6;
 }
 
 .text-colored {
@@ -87,6 +85,55 @@
 
 .btn:hover {
     background-color: #f8c697;
+}
+
+.container-banners {
+    display: flex;
+    justify-content: center;
+}
+
+.mini-banners {
+    width: 810px;
+    height: 454px;
+    border-radius: 4px;
+    background-color: #faaa5f;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 5em;
+    border-radius: 10px;
+}
+
+.mini-banners p {
+    height: 100%;
+    flex: 0.3;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 1s;
+    background: #e7e6e6;
+    border: 1px solid #1d1b1b;
+    display: flex;
+    align-items: center;
+}
+
+.mini-banners p:hover {
+    flex: 5;
+}
+
+.mini-banners p span {
+    min-width: 14em;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #1d1b1b;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30%;
+}
+
+.mini-banners p:hover span {
+    transform: rotate(0);
 }
 
 .card {
@@ -147,16 +194,6 @@
     border-radius: 10px;
 }
 
-.card-blog-container::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, #ff7b00 20%, #fcc695 100%);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-}
-
 .card-blog {
     width: 100%;
     height: 100%;
@@ -190,7 +227,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     color: #e8e8e8;
     padding: 20px 24px;
     line-height: 1.5;
@@ -222,14 +259,9 @@
 }
 
 
-@media (max-width: 991px) {
-    .carousel-item img {
-        height: 250px;
-        width: 100%;
-    }
-
-    .container-header {
-        height: 5vh;
+@media (max-width: 768px) {
+    .navbar {
+        min-height: 6em;
     }
 }
 
