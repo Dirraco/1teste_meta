@@ -2,6 +2,7 @@ body {
     background-color: #e7e6e6;
 }
 
+/* cabecalho */
 .navbar {
     background-color: #1d1b1b;
     max-height: 10vh;
@@ -87,6 +88,8 @@ body {
     background-color: #f8c697;
 }
 
+/* banners */
+
 .container-banners {
     width: 100%;
     display: flex;
@@ -136,6 +139,8 @@ body {
 .mini-banners p:hover span {
     transform: rotate(0);
 }
+
+/* serviços */
 
 .card {
     position: relative;
@@ -187,6 +192,8 @@ body {
     color: #777;
     line-height: 1.4;
 }
+
+/* blog */
 
 .card-blog-container {
     width: 300px;
@@ -259,6 +266,8 @@ body {
     fill: transparent;
 }
 
+/* rodapé */
+
 footer {
     background-color: #1d1b1b;
     color: #e7e6e6;
@@ -310,6 +319,39 @@ footer {
     .endereco {
         margin: 0;
         padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1700px) {
+.container-banners {
+        display: block;
+    }
+    
+    .mini-banners {
+        width: 100%;
+        height: 10%;
+        display: block;
+    }
+
+    .mini-banners p {
+        transition: none;
+        display: block;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        cursor: auto;
+    }
+    
+    .mini-banners p:hover {
+        flex: 2;
+    }
+    
+    .mini-banners p span {
+        margin: 10px;
+        padding: 5px;
+        min-width: 4em;
+        transform: none;
+        transition: none;
     }
 }
 
