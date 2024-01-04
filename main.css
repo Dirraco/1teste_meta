@@ -140,6 +140,57 @@ body {
     transform: rotate(0);
 }
 
+.faq {
+    padding: 5.6vh
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 24px
+}
+
+.faq__questions__item {
+    background-color: #13151d;
+    margin-bottom: 16px
+}
+
+.faq__questions__item__question {
+    color: #fff;
+    font-size: 20px;
+    padding: 24px;
+    display: block;
+    cursor: pointer;
+    position: relative
+}
+
+.faq__questions__item__question::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40px
+}
+
+.faq__questions__item__answer {
+    height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: height, .5s ease
+}
+
+.faq__questions__item--is-open .faq__questions__item__question::after {
+    content: "-"
+}
+
+.faq__questions__item--is-open .faq__questions__item__answer {
+    height: auto;
+    padding-bottom: 24px;
+    transition: height, .5s ease
+}
+
 /* serviços */
 
 .card {
