@@ -90,68 +90,66 @@ body {
 
 /* banners */
 
-.container-banners {
-    width: 100%;
+.bannerss {
+    min-height: 400px;
     display: flex;
     justify-content: center;
-}
-
-.mini-banners {
-    width: 42vw;
-    height: 454px;
-    border-radius: 4px;
-    background-color: #faaa5f;
-    display: flex;
-    justify-content: space-between;
     gap: 40px;
-    padding: 5em;
-    border-radius: 10px;
-}
-
-.mini-banners p {
-    height: 100%;
-    flex: 0.3;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 1s;
-    background: #e7e6e6;
-    border: 1px solid #1d1b1b;
-    display: flex;
+    transition: none;
     align-items: center;
 }
 
-.mini-banners p:hover {
-    flex: 5;
+.banner {
+    background-color:  #cacaca;
+    height: 350px;
+    width: 390px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    text-align: center;
+
 }
 
-.mini-banners p span {
-    min-width: 14em;
-    transform: rotate(-90deg);
-    transition: all .5s;
+p.tip {
+    font-size: 3em;
+    font-weight: 700;
+    color: #13151d;
     text-transform: uppercase;
-    color: #1d1b1b;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30%;
 }
 
-.mini-banners p:hover span {
-    transform: rotate(0);
+
+p.second-text {
+    font-size: 1em;
+    color: #1d1b1b;
+    padding: 20px;
+}
+
+.banner:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.bannerss:hover> .banner:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
 }
 
 .faq {
-    padding: 5.6vh
+    padding: 5.6vh;
+}
+
+ul {
+    list-style-type: none
 }
 
 .faq h2 {
     text-align: center;
-    margin-bottom: 24px
+    margin-bottom: 24px;
 }
 
 .faq__questions__item {
     background-color: #13151d;
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .faq__questions__item__question {
@@ -178,17 +176,18 @@ body {
     height: 0;
     overflow: hidden;
     padding: 0 24px;
-    transition: height, .5s ease
+    transition: height, 1.1s ease;
+    color: #fff;
 }
 
 .faq__questions__item--is-open .faq__questions__item__question::after {
-    content: "-"
+    content: "-";
 }
 
 .faq__questions__item--is-open .faq__questions__item__answer {
     height: auto;
     padding-bottom: 24px;
-    transition: height, .5s ease
+    transition: height, 1.1s ease;
 }
 
 /* serviços */
@@ -327,6 +326,26 @@ footer {
     padding-right: 4%;
 }
 
+@media (max-width: 450px) {
+    .bannerss {
+        min-height: 200px;
+        display: grid;
+    }
+    
+    .banner {
+        height: 350px;
+        width: 190px;
+    }
+
+    .card-blog-container {
+        margin-left: 5%;
+    }
+
+    .card {
+        margin-left: 5%;
+    }
+}
+
 @media (max-width: 767px) {
     .navbar {
         min-height: 6.5em;
@@ -336,73 +355,46 @@ footer {
         background-color: #1d1b1b;
     }
 
-    .container-banners {
-        display: block;
-    }
-    
-    .mini-banners {
-        width: 100%;
-        height: 10%;
-        display: block;
-    }
-
-    .mini-banners p {
-        transition: none;
-        display: block;
-        align-items: center;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .mini-banners p:hover {
-        flex: 2;
-    }
-    
-    .mini-banners p span {
-        margin: 10px;
-        padding: 5px;
-        min-width: 4em;
-        transform: none;
-        transition: none;
-    }
-
     .rede-sociais,
     .endereco {
         margin: 0;
         padding: 0;
     }
+
+    p.tip {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #13151d;
+        text-transform: uppercase;
+        padding:  5px;
+        padding-bottom: 0%;
+    }
+    
+    p.second-text {
+        padding: 0 5px;
+        font-size: 0.7em;
+        color: #1d1b1b;
+        padding-top: 0%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1700px) {
-.container-banners {
-        display: block;
+    p.tip {
+        font-size: 2em;
+        font-weight: 700;
+        color: #13151d;
+        text-transform: uppercase;
+        padding:  5px;
+        padding-bottom: 0%;
+        padding-top: 10px;
     }
     
-    .mini-banners {
-        width: 100%;
-        height: 10%;
-        display: block;
-    }
-
-    .mini-banners p {
-        transition: none;
-        display: block;
-        align-items: center;
-        text-align: center;
-        font-size: 15px;
-        cursor: auto;
-    }
     
-    .mini-banners p:hover {
-        flex: 2;
-    }
-    
-    .mini-banners p span {
-        margin: 10px;
-        padding: 5px;
-        min-width: 4em;
-        transform: none;
-        transition: none;
+    p.second-text {
+        padding: 0 20px;
+        font-size: .8em;
+        color: #1d1b1b;
+        padding-top: 0%;
     }
 }
 
@@ -413,21 +405,6 @@ footer {
 
     .container-header:hover {
         background-color: #1d1b1b;
-    }
-
-    .container-banners {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .mini-banners {
-        width: 100%;
-        max-height: 20%;
-    }
-    
-    .mini-banners p span {
-        min-width: 11em;
     }
 
     .carousel-item img {
