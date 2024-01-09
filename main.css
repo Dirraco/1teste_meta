@@ -42,6 +42,17 @@ body {
     color: #faaa5f;
 }
 
+.background-colored {
+    color: #13151d;
+    background-image: linear-gradient(90deg, #e7e6e6 .2%, #ff9838 100%);
+    align-items: center;
+    text-align: center;
+    margin-left: 1.8%;
+    width: 98.2%;
+    height: 40px;
+    border-radius: 10px;
+}
+
 .finance {
     padding: 48px;
     margin-top: 50px;
@@ -194,8 +205,9 @@ ul {
 
 .card {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    max-width: 100%;
+    height: 250px;
     background: linear-gradient(45deg, #ff820c 20%, #ffd30f 100%);
     border-radius: 10px;
     display: flex;
@@ -227,6 +239,12 @@ ul {
 .card:hover .card__content {
     transform: translate(-50%, -50%) rotate(0deg);
     opacity: 1;
+}
+
+.img-service {
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .card__title {
@@ -319,8 +337,8 @@ ul {
 /* rodapé */
 
 footer {
-    background-color: #1d1b1b;
-    color: #e7e6e6;
+    background-color: #faaa5f;
+    color: #13151d;
     max-width: 100%;
     text-align: end;
     padding-right: 4%;
@@ -335,14 +353,6 @@ footer {
     .banner {
         height: 350px;
         width: 190px;
-    }
-
-    .card-blog-container {
-        margin-left: 5%;
-    }
-
-    .card {
-        margin-left: 5%;
     }
 }
 
