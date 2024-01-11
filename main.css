@@ -341,9 +341,15 @@ footer {
     background-color: #faaa5f;
     color: #13151d;
     max-width: 100%;
-    text-align: end;
-    padding-right: 4%;
+    text-align: center;
+    margin-top: 0;
 }
+
+.logo-parceiros {
+    max-width: 50px;
+    max-width: 50px;
+}
+
 
 @media (max-width: 450px) {
     .bannerss {
